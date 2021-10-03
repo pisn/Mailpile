@@ -8315,7 +8315,7 @@ tr.modal-tag-picker-item td.checkbox {
   font-weight: normal;
   color: inherit;
 }
-#pile-results tr a:focus {
+#pile-results td:focus-within {
   border: 4px solid red;
 }
 #pile-results tr.in_new a {
