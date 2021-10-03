@@ -167,7 +167,7 @@
     </a>
  {%- else %}
   <td class="from people" data-fn="{{metadata.from.fn}}" data-address="{{metadata.from.address}}">
-    <a href="{{msg_url(mid, 0)}}" data-noblank=1 data-keep-selection=1
+    <a tabindex="-1" href="{{msg_url(mid, 0)}}" data-noblank=1 data-keep-selection=1
        title="{% if display_attachments -%}
 {{ _("Subject") }}: {{ metadata.subject }}
 {% endif %}{{_("From") }}: {{metadata.from.fn}} &lt;{{metadata.from.address}}&gt;

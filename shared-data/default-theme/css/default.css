@@ -377,6 +377,8 @@
 .icon-zip:before {
   content: "\e66b";
 }
+
+
 /* Sidebar - makes icons switch to dotted circle on drag */
 .sidebar-tags-draggable-hover .icon-mailsource:before,
 .sidebar-tags-draggable-hover .icon-inbox:before,
@@ -7294,8 +7296,13 @@ div.notification-bubble span.action {
   font-weight: normal;
 }
 #sidebar li.sidebar-tag {
-  position: relative;
+  position: relative;  
 }
+
+#sidebar a.sidebar-tag:focus {
+  border: 4px solid red;
+}
+
 #sidebar a.sidebar-tag-expand {
   position: absolute;
   display: inline-block;
@@ -8259,7 +8266,7 @@ tr.modal-tag-picker-item td.checkbox {
   min-width: 800px;
   border-collapse: collapse;
   border: 0px;
-}
+}       
 #pile-results tr.result {
   background: #ffffff;
 }
@@ -8307,6 +8314,9 @@ tr.modal-tag-picker-item td.checkbox {
   line-height: 14px;
   font-weight: normal;
   color: inherit;
+}
+#pile-results tr a:focus {
+  border: 4px solid red;
 }
 #pile-results tr.in_new a {
   font-weight: bold;
